@@ -11,8 +11,7 @@
     justify-content:center;
     height: 50px;
     align-items: center;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    position: sticky;
+   position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -35,8 +34,7 @@
 .navbar ul li{
     font-family: century;
     font-size: 1.1rem;
-    /* font-weight: bold;  */
-}
+    }
 
 .navbar ul li a{
     padding: 5px 20px;
@@ -132,16 +130,21 @@ body {
     color: white;
     position: relative;
     margin-top: 10px;
-  /* margin-right: 5px; */
+    overflow: hidden;
+  }
+.project img{
+    filter:blur(5px);
+    transition: 1s;
+    width: 100%;
+}
+.project img:hover{
+    filter:blur(0);
 }
 .right{
     float: right;
 }
 .left{
     float: left;
-}
-.project :nth-child(1){
-/* //margin-right: 10%; */
 }
 
 .project-ch{
@@ -175,13 +178,13 @@ body {
 } 
 
 .about {
-    display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
+   
 
 .about img {
-    width: 25%;
+    /* width: 25%; */
     height: 424px; 
     padding: 0 30px;
     border-radius: 30%;
@@ -204,19 +207,18 @@ body {
 .contact-info{
     margin:0 40px 20px 40px;
     padding: 12px 0;
-    display:flex;
+    /* display:flex; */
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
     bottom:0;
     
 }
 
 .contact-info ul{
-    display:flex;
     list-style: none;
     margin: 20px 0px;
 }
+    
 
 .contact-info ul li{
     font-family: century;
@@ -237,6 +239,143 @@ input, textarea{
 label{
     margin-left: 20px;
 }
+.img-cont{
+    width: 25%;
+    float: left;
+}
+.data-cont{
+    width: 75%;
+    float: left;
+}
 
 
+.contact-form{
+    width: 40%;
+    float: left;
+
+}
+.conact-menu{
+    width: 60%;
+    float: left;
+}
+
+#contact{
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+/* On screens that are 600px or less*/
+@media screen and (max-width: 600px) {
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        list-style: none;
+        justify-items: center;
+        justify-content: stretch;
+    }
+    
+    .navbar ul li{
+        width: 100%
+        font-family: century;
+        font-size: 1.1rem;
+        float: none;
+        display: block;
+        background-color: white;
+    }
+    
+    .navbar ul li a{
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: gray;    
+    }
+    
+    .navbar ul li a:hover {
+        background-color:rgb(207, 193, 193);
+        color: black;
+        }
+    
+    .project{
+        border: 5px aqua solid;
+        height: 350px;
+        width: 100%;
+        background-image: url(../images/proj02bg.jpg);
+        color: white;
+        position: relative;
+        margin-top: 10px;
+        overflow: hidden;
+      }
+
+    .project img{
+        filter:blur(5px);
+        transition: 1s;
+        width: 100%;
+        min-height: 100%;
+    }
+    .img-cont{
+        width: 100%;
+    }
+    .data-cont{
+        width: 100%;
+    }
+
+    .contact-form{
+        width: 100%;
+       
+    
+    }
+    .conact-menu{
+        width: 100%;
+    
+    }
+
+
+    .conact-menu ul li{
+        float: none;
+    }
+  }
+
+
+/* On screens that are 960px or less*/
+@media screen and (max-width: 960px) {
+ 
+    .project{
+        border: 5px aqua solid;
+        height: 350px;
+        width: 100%;
+        background-image: url(../images/proj02bg.jpg);
+        color: white;
+        position: relative;
+        margin-top: 10px;
+        overflow: hidden;
+     }
+
+    .project img{
+        filter:blur(5px);
+        transition: 1s;
+        width: 100%;
+        min-height: 100%;
+    }
+    .img-cont{
+        width: 100%;
+    }
+    .data-cont{
+        width: 100%;
+    }
+
+    .contact-form{
+        width: 100%;
+       
+    
+    }
+    .conact-menu{
+        width: 100%;
+    
+    }
+
+
+    .conact-menu ul li{
+        float: none;
+    }
+  }
 
